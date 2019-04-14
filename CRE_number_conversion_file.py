@@ -45,6 +45,7 @@ CONVERTING = True
 
                         elif(4 == menuIndex):
                             #Ascii logic
+                            value = int("".join(leds),2)
                             asciiValue = value&0xff
                             asciiValue += ((value>>8)&0xff)
                             asciiValue += ((value>>16)&0xff)
